@@ -543,6 +543,14 @@ li {
     padding-top: 10%;
 }
 
+.bar-active{
+  fill: #55b1ff;
+  height: 21px;
+  /*transition: fill .3s ease;*/
+  cursor: pointer;
+
+}
+
 .bar {
      fill: #c4f0ff;
   height: 21px;
@@ -551,6 +559,9 @@ li {
     
   
 }
+
+
+
 /*
 .bar rect {
         outline-style: solid;

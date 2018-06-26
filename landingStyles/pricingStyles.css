@@ -263,6 +263,7 @@ width: 33.33333%;
    display: block;
     color: #8be3ef;  
     text-align: center;
+    cursor: pointer;
 } 
 
 #mainContAll {

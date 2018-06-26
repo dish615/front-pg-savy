@@ -1585,7 +1585,7 @@ padding-left: 0;
     margin-top: 11px;
 }
 
-.sec2 {
+.verticalToggle .opt:nth-child(2) {
     margin-top: 3px;
 }
 

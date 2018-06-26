@@ -1,18 +1,23 @@
-$(document).ready(function(){
-   $(".questionCont").click(function(){
-       
-       if(!$(this).hasClass("selectedQuestion")) {
-           
-       
+function openQuestion(div_currq)
+{
+
            $(".questionCont").removeClass("selectedQuestion");
 
            $(".answer").hide();
 
            $(".plus").text("+");
-           $(this).addClass("selectedQuestion");
+           div_currq.addClass("selectedQuestion");
 
            $(".selectedQuestion .plus").text("-")
            $(".selectedQuestion .answer").slideDown(200);
+
+}
+
+$(document).ready(function(){
+   $(".questionCont").click(function(){
+       
+       if(!$(this).hasClass("selectedQuestion")) {
+           openQuestion($(this));
         } else {
              $(".questionCont").removeClass("selectedQuestion");
 
@@ -24,6 +29,12 @@ $(document).ready(function(){
        
        return false;
    });
+
+   $(".example").click(function(){
+      openQuestion($("#questionContPricing"));
+      $('html,body').animate({scrollTop: $("#questionContPricing").offset().top});
+
+   })
     
      $("#smallMenu").click(function(){
         
